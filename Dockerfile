@@ -1,6 +1,6 @@
 FROM centos:centos6
 
-ENV nginxversion="1.16.1" \
+ENV nginxversion="1.16.1-1" \
     os="centos" \
     osversion="6"
 
