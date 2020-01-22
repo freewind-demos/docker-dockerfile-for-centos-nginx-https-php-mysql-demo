@@ -10,8 +10,8 @@ RUN yum clean all &&\
     rpm -iv nginx-$nginxversion.el$osversion.ngx.x86_64.rpm &&\
     yum clean all
 
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY index.php /data/www/index.php
+RUN service php-fpm start
+
 VOLUME [ "/data/www" ]
 EXPOSE 80
 
